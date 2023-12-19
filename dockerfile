@@ -9,10 +9,6 @@ WORKDIR /app
 COPY bitpingd .
 RUN chmod +x bitpingd
 
-# Expose ports
-EXPOSE 43463
-EXPOSE 41703
-
 # Run bitpingd when the container launches
 CMD ["./bitpingd"]
 
